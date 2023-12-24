@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BookFly</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700'>
+<link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="mobile-wrap">
+	<div class="mobile clearfix">
+		<div class="header">
+			<span class="ion-ios-navicon pull-left"><i></i></span>
+			<span class="title">Home</span>
+			<span class="ion-ios-search pull-right"></span>
+			<div class="search">
+			<form method="post">
+				<input type="search" placeholder="Search Here">
+			</form>
+			</div>
+		</div>
+		<div class="sidebar">
+			<div class="sidebar-overlay"></div>
+			<div class="sidebar-content">
+				<div class="top-head">
+					<div class="name">Gaetano Natuzzi</div>
+					<div class="email">gaetanonatuzzi14@gmail.com</div>
+				</div>
+				<div class="nav-left">
+					<a href="#home"><span class="ion-ios-home-outline"></span> Home</a>
+					<a href="#alarm"><span class="ion-ios-list-outline"></span> Libri</a>
+					<a href="#compose"><span class="ion-ios-compose-outline"></span> Registra libro</a>
+					<a href="#chats"><span class="ion-ios-chatboxes-outline"></span> Chat</a>
+					<a href="#profile"><span class="ion-ios-person-outline"></span> Profilo</a>
+					<a href="#settings"><span class="ion-ios-gear-outline"></span> Impostazioni</a>
+					<a href="#credits"><span class="ion-ios-information-outline"></span> Crediti</a>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="html search">
+				<div class="title bounceInDown animated">Cerca qui</div>
+				<p class="flipInX animated">Mi dispiace,<br>nessun risultato per:<b class="key"></b></p>
+			</div>
+			<div class="html welcome visible">
+				<div class="datetime">
+					<div class="day lightSpeedIn animated">Thursday</div>
+					<div class="date lightSpeedIn animated">June 18, 2015</div>
+					<div class="time lightSpeedIn animated">08:00 AM</div>
+				</div>
+			</div>
+			<div class="html alarm">
+				<div class="forecast clearfix">
+					<div class="datetime pull-left bounceInLeft animated">
+						<div class="day">Thursday</div>
+						<div class="date">June 18, 2015</div>
+					</div>
+					<div class="temperature pull-right bounceInRight animated">
+						<div class="unit"><span class="ion-ios-sunny-outline"></span> 34<i>&deg;</i></div>
+						<div class="location">Kathmandu, Nepal</div>
+					</div>
+				</div>
+				<div class="alarm-list">
+					<div class="note clearfix slideInRight animated">
+						<div class="time pull-left">
+							<div class="hour">9</div>
+							<div class="shift">AM</div>
+						</div>
+						<div class="to-do pull-left">
+							<div class="title">Finish HTML Coding</div>
+							<div class="subject">Web UI</div>
+						</div>
+					</div>
+					<div class="note clearfix slideInRight animated">
+						<div class="time pull-left">
+							<div class="hour">1</div>
+							<div class="shift">PM</div>
+						</div>
+						<div class="to-do pull-left">
+							<div class="title">Lunch Break</div>
+							<div class="subject"></div>
+						</div>
+					</div>
+					<div class="note clearfix slideInRight animated" data-revert="slideOutRight">
+						<div class="time pull-left">
+							<div class="hour">3</div>
+							<div class="shift">PM</div>
+						</div>
+						<div class="to-do pull-left">
+							<div class="title">Design Stand Up</div>
+							<div class="subject">Hangouts</div>
+							<div class="user-list clearfix">
+								<div class="user pull-left"><img src="https://raw.githubusercontent.com/khadkamhn/secret-project/master/img/usr-i.png"></div>
+								<div class="user pull-left"><img src="https://raw.githubusercontent.com/khadkamhn/secret-project/master/img/usr-ii.png"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="html compose">
+				<div class="forms">
+					<div class="group clearfix slideInRight animated">
+						<label class="pull-left" for="compose-time"><span class="ion-ios-time-outline"></span> Time</label>
+						<input class="pull-right" id="compose-time" type="time">
+					</div>
+					<div class="group clearfix slideInLeft animated">
+						<label class="pull-left" for="compose-date"><span class="ion-ios-calendar-outline"></span> Date</label>
+						<input class="pull-right" id="compose-date" type="date">
+					</div>
+					<div class="group clearfix slideInRight animated">
+						<label class="pull-left" for="compose-title"><span class="ion-ios-paper-outline"></span> Title</label>
+						<input class="pull-right" id="compose-title" type="text">
+					</div>
+					<div class="group clearfix slideInLeft animated">
+						<label class="visible" for="compose-detail"><span class="ion-ios-list-outline"></span> Task</label>
+						<textarea class="visible" id="compose-detail" rows="3"></textarea>
+					</div>
+					<div class="action flipInY animated">
+						<button class="btn">Conferma</button>
+					</div>
+				</div>
+			</div>
+			<div class="html chats">
+				<div class="tabs-list clearfix">
+					<a href="#" class="tab active">Utenti</a>
+					<a href="#" class="tab">Messaggi</a>
+					<a href="#" class="tab">Gruppi</a>
+				</div>
+				<div class="active-users">
+					<div class="user clearfix rotateInDownLeft animated">
+						<div class="photo pull-left">
+							<img src="io.png">
+						</div>
+						<div class="desc pull-left">
+							<p class="name">Gaetano Natuzzi</p>
+							<p class="position">Web &amp; UI Designer and Owner</p>
+						</div>
+						<div class="idle pull-right"><span class="away"></span></div>
+					</div>
+					<div class="user clearfix rotateInDownRight animated">
+						<div class="photo pull-left">
+							<img src="daniele.png">
+						</div>
+						<div class="desc pull-left">
+							<p class="name">Daniele Troilo</p>
+							<p class="position">Designer</p>
+						</div>
+						<div class="idle pull-right"><span class="offline"></span></div>
+					</div>
+					<div class="user clearfix rotateInDownLeft animated">
+						<div class="photo pull-left">
+							<img src="piero.png">
+						</div>
+						<div class="desc pull-left">
+							<p class="name">Piero Sabatelli</p>
+							<p class="position">Co-Founder</p>
+						</div>
+						<div class="idle pull-right"><span class="away"></span></div>
+					</div>
+					<div class="user clearfix rotateInDownRight animated">
+						<div class="photo pull-left">
+							<img src="brizio.png">
+						</div>
+						<div class="desc pull-left">
+							<p class="name">Fabrizio Leo</p>
+							<p class="position">Admin</p>
+						</div>
+						<div class="idle pull-right"><span class="online"></span></div>
+					</div>
+					<div class="user clearfix rotateInDownLeft animated">
+						<div class="photo pull-left">
+							<img src="OIP.jpg">
+						</div>
+						<div class="desc pull-left">
+							<p class="name">Luigi Carso</p>
+							<p class="position">Admin</p>
+						</div>
+						<div class="idle pull-right"><span class="online"></span></div>
+					</div>
+					<div class="user clearfix rotateInDownRight animated">
+						<div class="photo pull-left">
+							<img src="OIP.jpg">
+						</div>
+						<div class="desc pull-left">
+							<p class="name">Simona Ianuzzi</p>
+							<p class="position">Teacher</p>
+						</div>
+						<div class="idle pull-right"><span class="online"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="html settings">
+				<div class="setting-list">
+					<div class="gear clearfix slideInRight animated">
+						<div class="title pull-left">Generali</div>
+						<div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+					</div>
+					<div class="gear clearfix slideInLeft animated">
+						<div class="title pull-left"><label for="gear-notice">Notifiche</label></div>
+						<div class="action pull-right"><input id="gear-notice" class="on-off" type="checkbox"><label for="gear-notice"></label></div>
+					</div>
+					<div class="gear clearfix slideInRight animated">
+						<div class="title pull-left"><label for="gear-sound">Suoni</label></div>
+						<div class="action pull-right"><input id="gear-sound" class="on-off" type="checkbox" checked><label for="gear-sound"></label></div>
+					</div>
+					<div class="gear clearfix slideInLeft animated">
+						<div class="title pull-left">Temi</div>
+						<div class="action pull-right">Standard <span class="ion-ios-arrow-right"></span></div>
+					</div>
+					<div class="gear clearfix slideInRight animated">
+						<div class="title pull-left">Supporto</div>
+						<div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+					</div>
+					<div class="gear clearfix slideInLeft animated">
+						<div class="title pull-left">Privacy</div>
+						<div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="html profile">
+				<div class="photo flipInX animated">
+					<img src="io.png">
+					<div class="social">
+						<a href="#" class="soc-item soc-count-1"><span class="ion-social-facebook"></span></a>
+						<a href="#" class="soc-item soc-count-2"><span class="ion-social-twitter"></span></a>
+						<a href="#" class="soc-item soc-count-3"><span class="ion-social-github"></span></a>
+						<a href="#" class="soc-item soc-count-4"><span class="ion-social-pinterest"></span></a>
+						<a href="#" class="soc-item soc-count-5"><span class="ion-social-linkedin"></span></a>
+						<a href="#" class="soc-item soc-count-6"><span class="ion-social-codepen"></span></a>
+						<a href="#" class="soc-item soc-count-7"><span class="ion-social-skype"></span></a>
+						<a href="#" class="soc-item soc-count-8"><span class="ion-social-dribbble"></span></a>
+					</div>
+				</div>
+				<div class="details">
+					<p class="heading flipInY animated">
+						<span class="name">Gaetano Natuzzi</span><span class="position">Web/Graphic Desiger <font color="red">Owner</font></span>
+					</p>
+					<p class="text fadeInUp animated">Ciao, sono Gaetano, sono un graphics designer. Creare pagine web è la mia passione, ho in mente tantissimi progetti.</p>
+				</div>
+			</div>
+			<div class="html credits">
+				<div class="title flipInY animated">Crediti:</div>
+				<div class="credit-ol">  
+					<div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">.</a> <span>.</span></div>
+					<div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">.</a> <span>.</span></div>
+					<div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">.</a> <span>.</span></div>
+					<div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">.</a> <span>.</span></div>
+					<div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">.</a> <span>.</span></div>
+					<div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">.</a> <span>.</span></div>
+					<div class="credit-li lightSpeedIn animated"><a href=#" target="_blank">.</a> <span>.</span></div>
+				</div>
+				<div class="text zoomInUp animated">.</div>
+			</div>
+		</div>
+		<div class="nav">
+			<a href="#profile" class="nav-item nav-count-1"><i class="ion-ios-person-outline"></i><span class="invisible">Profile</span></a>
+			<a href="#compose" class="nav-item nav-count-2"><i class="ion-ios-compose-outline"></i><span class="invisible">Compose</span></a>
+			<a href="#chats" class="nav-item nav-count-3"><i class="ion-ios-chatboxes-outline"></i><span class="invisible">Chats</span></a>
+			<a href="#alarm" class="nav-item nav-count-4"><i class="ion-ios-alarm-outline"></i><span class="invisible">Alarm</span></a>
+			<a href="#toggle" class="mask"><i class="ion-ios-plus-empty"></i></a>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
